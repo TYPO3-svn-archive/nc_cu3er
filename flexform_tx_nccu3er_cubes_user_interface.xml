@@ -1,0 +1,1374 @@
+<T3DataStructure>
+	<meta>
+	<langDisable>1</langDisable>
+	<!--  <langChildren>1</langChildren>!-->
+		</meta>
+	<sheets>
+		<general>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>General</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<slide_panel_width>
+						<TCEforms>
+							<label>slide_panel_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>980</default>
+							</config>
+						</TCEforms>
+					</slide_panel_width>
+					<slide_panel_height>
+						<TCEforms>
+							<label>slide_panel_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>380</default>
+							</config>
+						</TCEforms>
+					</slide_panel_height>
+					<slide_panel_horizontal_align>
+						<TCEforms>
+							<label>slide_panel_horizontal_align</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">left</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">top</numIndex>
+										<numIndex index="1">top</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">right</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</slide_panel_horizontal_align>
+					<slide_panel_vertical_align>
+						<TCEforms>
+							<label>slide_panel_vertical_align</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">top</numIndex>
+										<numIndex index="1">top</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">center</numIndex>
+										<numIndex index="1">center</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">bottom</numIndex>
+										<numIndex index="1">bottom</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</slide_panel_vertical_align>
+					<ui_visibility_time>
+						<TCEforms>
+							<label>ui_visibility_time</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>3</default>
+							</config>
+						</TCEforms>
+					</ui_visibility_time>
+			
+				</el>
+			</ROOT>
+		</general>
+		<auto_play>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Autoplay</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_symbol>
+						<TCEforms>
+							<label>symbol</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">circular</numIndex>
+										<numIndex index="1">circular</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">linear</numIndex>
+										<numIndex index="1">linear</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</defaults_symbol>
+					<defaults_time>
+						<TCEforms>
+							<label>Zeit bis zur nächsten Folie</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>5</default>
+							</config>
+						</TCEforms>
+					</defaults_time>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</auto_play>
+		<preloader>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Preloader</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_symbol>
+						<TCEforms>
+							<label>symbol</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">circular</numIndex>
+										<numIndex index="1">circular</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">linear</numIndex>
+										<numIndex index="1">linear</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</defaults_symbol>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</preloader>
+		<description>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Description</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_round_corners>
+						<TCEforms>
+							<label>round_corners (0,0,0,0)</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>0,0,0,0</default>
+							</config>
+						</TCEforms>
+					</defaults_round_corners>
+					<defaults_heading_font>
+						<TCEforms>
+							<label>heading_font</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>Georgia</default>
+							</config>
+						</TCEforms>
+					</defaults_heading_font>
+					<defaults_heading_text_size>
+						<TCEforms>
+							<label>heading_text_size</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>18</default>
+							</config>
+						</TCEforms>
+					</defaults_heading_text_size>
+					<defaults_heading_text_color>
+						<TCEforms>
+							<label>heading_text_color</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</defaults_heading_text_color>
+					<defaults_heading_text_align>
+						<TCEforms>
+							<label>heading_text_align</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">left</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">center</numIndex>
+										<numIndex index="1">center</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">right</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</defaults_heading_text_align>
+					<defaults_heading_text_margin>
+						<TCEforms>
+							<label>heading_text_margin (10,25,0,25)</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>10,25,0,25</default>
+							</config>
+						</TCEforms>
+					</defaults_heading_text_margin>
+					<defaults_heading_text_leading>
+						<TCEforms>
+							<label>heading_text_leading</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</defaults_heading_text_leading>
+					<defaults_heading_text_letterSpacing>
+						<TCEforms>
+							<label>heading_text_letterSpacing</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</defaults_heading_text_letterSpacing>
+					<defaults_paragraph_font>
+						<TCEforms>
+							<label>paragraph_font</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>Arial</default>
+							</config>
+						</TCEforms>
+					</defaults_paragraph_font>
+					
+					<defaults_paragraph_text_size>
+						<TCEforms>
+							<label>paragraph_text_size</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>12</default>
+							</config>
+						</TCEforms>
+					</defaults_paragraph_text_size>
+					<defaults_paragraph_text_color>
+						<TCEforms>
+							<label>paragraph_text_color</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0xFFFFFF</default>	
+							</config>
+						</TCEforms>
+					</defaults_paragraph_text_color>
+					<defaults_paragraph_text_align>
+						<TCEforms>
+							<label>paragraph_text_align</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">left</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">center</numIndex>
+										<numIndex index="1">center</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">right</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</defaults_paragraph_text_align>
+					<defaults_paragraph_text_margin>
+						<TCEforms>
+							<label>paragraph_text_margin (10,25,0,25)</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>10,25,0,25</default>
+							</config>
+						</TCEforms>
+					</defaults_paragraph_text_margin>
+					<defaults_paragraph_text_leading>
+						<TCEforms>
+							<label>paragraph_text_leading</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>0</default>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</defaults_paragraph_text_leading>
+					<defaults_paragraph_text_letterSpacing>
+						<TCEforms>
+							<label>paragraph_text_letterSpacing</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</defaults_paragraph_text_letterSpacing>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</description>
+		<prev_button>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>prev_button</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_round_corners>
+						<TCEforms>
+							<label>round_corners (10,25,0,25)</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>10,25,0,25</default>	
+							</config>
+						</TCEforms>
+					</defaults_round_corners>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>180</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</prev_button>
+		<next_button>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>next_button</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_round_corners>
+						<TCEforms>
+							<label>round_corners (10,25,0,25)</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>10,25,0,25</default>
+							</config>
+						</TCEforms>
+					</defaults_round_corners>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</next_button>
+		<prev_symbol>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>prev_symbol</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_type>
+						<TCEforms>
+							<label>Symbol</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">6</numIndex>
+										<numIndex index="1">6</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">7</numIndex>
+										<numIndex index="1">7</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">8</numIndex>
+										<numIndex index="1">8</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">9</numIndex>
+										<numIndex index="1">9</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">10</numIndex>
+										<numIndex index="1">10</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</defaults_type>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>180</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0xFFFFFF</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</prev_symbol>
+		<next_symbol>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>next_symbol</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<defaults_type>
+						<TCEforms>
+							<label>Symbol</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">6</numIndex>
+										<numIndex index="1">6</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">7</numIndex>
+										<numIndex index="1">7</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">8</numIndex>
+										<numIndex index="1">8</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">9</numIndex>
+										<numIndex index="1">9</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">10</numIndex>
+										<numIndex index="1">10</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</defaults_type>
+					<tweenIn_time>
+						<TCEforms>
+							<label>tween_time</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.3</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_time>
+					<tweenIn_delay>
+						<TCEforms>
+							<label>tweenIn_delay</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_delay>
+					<tweenIn_x>
+						<TCEforms>
+							<label>tweenIn_x</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_x>
+					<tweenIn_y>
+						<TCEforms>
+							<label>tweenIn_y</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_y>
+					<tweenIn_width>
+						<TCEforms>
+							<label>tweenIn_width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_width>
+					<tweenIn_height>
+						<TCEforms>
+							<label>tweenIn_height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>50</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_height>
+					<tweenIn_rotation>
+						<TCEforms>
+							<label>tweenIn_rotation</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+								<default>0</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_rotation>
+					<tweenIn_alpha>
+						<TCEforms>
+							<label>tweenIn_alpha</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.5</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_alpha>
+					<tweenIn_tint>
+						<TCEforms>
+							<label>tweenIn_tint</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0xFFFFFF</default>	
+							</config>
+						</TCEforms>
+					</tweenIn_tint>
+				</el>
+			</ROOT>
+		</next_symbol>
+		<transitions>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Transition</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<num>
+						<TCEforms>
+							<label>number of slices</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</num>
+					<slicing>
+						<TCEforms>
+							<label>slicing</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">horizontal</numIndex>
+										<numIndex index="1">horizontal</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">vertical</numIndex>
+										<numIndex index="1">vertical</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</slicing>
+					<direction>
+						<TCEforms>
+							<label>direction</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">left</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">right</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">up</numIndex>
+										<numIndex index="1">up</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">down</numIndex>
+										<numIndex index="1">down</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</direction>
+					<duration>
+						<TCEforms>
+							<label>duration</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>	
+								<default>0.5</default>
+							</config>
+						</TCEforms>
+					</duration>
+					<delay>
+						<TCEforms>
+							<label>delay</label>
+							<config>
+								<type>input</type>
+								<eval>double</eval>
+								<size>10</size>
+								<default>0.1</default>	
+							</config>
+						</TCEforms>
+					</delay>
+					<shader>
+						<TCEforms>
+							<label>shader</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">none</numIndex>
+										<numIndex index="1">none</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">flat</numIndex>
+										<numIndex index="1">flat</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">phong</numIndex>
+										<numIndex index="1">phong</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</shader>
+					<light_position>
+						<TCEforms>
+							<label>light_position (0,25,-100)</label>
+							<config>
+								<type>input</type>
+								<size>10</size>	
+								<default>0,25,-100</default>
+							</config>
+						</TCEforms>
+					</light_position>
+					<cube_color>
+						<TCEforms>
+							<label>cube_color</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<default>0x000000</default>	
+							</config>
+						</TCEforms>
+					</cube_color>
+					<z_multiplier>
+						<TCEforms>
+							<label>z_multiplier</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>	
+								<default>2</default>
+							</config>
+						</TCEforms>
+					</z_multiplier>
+				</el>
+			</ROOT>
+		</transitions>
+	</sheets>
+</T3DataStructure>

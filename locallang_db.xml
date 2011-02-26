@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'nc_cu3er'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">cu3er</label>
+			<label index="tx_nccu3er_slides">Slides</label>
+			<label index="tx_nccu3er_slides.name">Name</label>
+			<label index="tx_nccu3er_slides.url">URL to image</label>
+			<label index="tx_nccu3er_slides.link">Link on slide</label>
+			<label index="tx_nccu3er_slides.target.I.0">_blank</label>
+			<label index="tx_nccu3er_slides.target.I.1">_self</label>
+			<label index="tx_nccu3er_slides.target.I.2">_parent</label>
+			<label index="tx_nccu3er_slides.target.I.3">_top</label>
+			<label index="tx_nccu3er_slides.target">Target of slide link</label>
+			<label index="tx_nccu3er_slides.description_heading">Heading description</label>
+			<label index="tx_nccu3er_slides.description_paragraph">Paragraph text</label>
+			<label index="tx_nccu3er_slides.description_link">Link description</label>
+			<label index="tx_nccu3er_slides.description_target.I.0">_blank</label>
+			<label index="tx_nccu3er_slides.description_target.I.1">_self</label>
+			<label index="tx_nccu3er_slides.description_target.I.2">_parent</label>
+			<label index="tx_nccu3er_slides.description_target.I.3">_top</label>
+			<label index="tx_nccu3er_slides.description_target">Target of description link</label>
+			<label index="tx_nccu3er_slides.flag">Use custom transition</label>
+			
+			<label index="tx_nccu3er_slides.div_general">General</label>
+			<label index="tx_nccu3er_slides.div_image">Image</label>
+			<label index="tx_nccu3er_slides.div_link">Link</label>
+			<label index="tx_nccu3er_slides.div_description">Description</label>
+			<label index="tx_nccu3er_slides.div_transition">Transition</label>
+			
+			<label index="tx_nccu3er_transitions">Transitions</label>
+			<label index="tx_nccu3er_transitions.name">Name of transition</label>
+			<label index="tx_nccu3er_transitions.num">Number of slices</label>
+			<label index="tx_nccu3er_transitions.slicing.I.0">horizontal</label>
+			<label index="tx_nccu3er_transitions.slicing.I.1">vertical</label>
+			<label index="tx_nccu3er_transitions.slicing">Direction of cube slicing</label>
+			<label index="tx_nccu3er_transitions.direction.I.0">left</label>
+			<label index="tx_nccu3er_transitions.direction.I.1">right</label>
+			<label index="tx_nccu3er_transitions.direction.I.2">up</label>
+			<label index="tx_nccu3er_transitions.direction.I.3">down</label>
+			<label index="tx_nccu3er_transitions.direction">Transition direction</label>
+			<label index="tx_nccu3er_transitions.duration">Time for each slice cube transition (in seconds)</label>
+			<label index="tx_nccu3er_transitions.delay">Delay of transition (in seconds)</label>
+			<label index="tx_nccu3er_transitions.shader.I.0">none</label>
+			<label index="tx_nccu3er_transitions.shader.I.1">flat</label>
+			<label index="tx_nccu3er_transitions.shader.I.2">phong</label>
+			<label index="tx_nccu3er_transitions.shader">Transition shading type</label>
+			<label index="tx_nccu3er_transitions.light_position">Light position of shading (x,y,z / only if not none)</label>
+			<label index="tx_nccu3er_transitions.cube_color">Cube faces color</label>
+			<label index="tx_nccu3er_transitions.z_multiplier">Multiplier for jo-jo effect</label>
+			
+			<label index="tx_nccu3er_cubes">Cube</label>
+			<label index="tx_nccu3er_cubes.user_interface">Interface settings</label>
+			<label index="tx_nccu3er_cubes.name">Name of cu3er</label>
+            <label index="tx_nccu3er_cubes.slides">Slides</label>
+            <label index="tx_nccu3er_cubes.transitions">Transitions</label>
+            
+            <label index="tx_nccu3er_cubes.div_general">General</label>
+			<label index="tx_nccu3er_cubes.div_user_interface">Interface</label>
+			<label index="tx_nccu3er_cubes.div_slides">Presentation (slides and transition)</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1">cu3er</label>
+			<label index="tx_nccu3er_slides">Folie</label>
+			<label index="tx_nccu3er_slides.name">Name</label>
+			<label index="tx_nccu3er_slides.url">URL zum Bild</label>
+			<label index="tx_nccu3er_slides.link">Link der Folie</label>
+			<label index="tx_nccu3er_slides.target.I.0">_blank</label>
+			<label index="tx_nccu3er_slides.target.I.1">_self</label>
+			<label index="tx_nccu3er_slides.target.I.2">_parent</label>
+			<label index="tx_nccu3er_slides.target.I.3">_top</label>
+			<label index="tx_nccu3er_slides.target">Ziel Folienlink</label>
+			<label index="tx_nccu3er_slides.description_heading">Überschrift Beschreibung</label>
+			<label index="tx_nccu3er_slides.description_paragraph">Text Beschreibung</label>
+			<label index="tx_nccu3er_slides.description_link">Link der Beschreibung</label>
+			<label index="tx_nccu3er_slides.description_target.I.0">_blank</label>
+			<label index="tx_nccu3er_slides.description_target.I.1">_self</label>
+			<label index="tx_nccu3er_slides.description_target.I.2">_parent</label>
+			<label index="tx_nccu3er_slides.description_target.I.3">_top</label>
+			<label index="tx_nccu3er_slides.description_target">Ziel Link Beschreibung</label>
+			<label index="tx_nccu3er_slides.flag">Benutzerdefinierter Übergang erstellen</label>
+			
+			<label index="tx_nccu3er_slides.div_general">General</label>
+			<label index="tx_nccu3er_slides.div_image">Grafik</label>
+			<label index="tx_nccu3er_slides.div_link">Link</label>
+			<label index="tx_nccu3er_slides.div_description">Beschreibung</label>
+			<label index="tx_nccu3er_slides.div_transition">Übergang</label>
+			
+			<label index="tx_nccu3er_transitions.num">Anzahl der Scheiben</label>
+			<label index="tx_nccu3er_transitions.slicing.I.0">horizontal</label>
+			<label index="tx_nccu3er_transitions.slicing.I.1">vertical</label>
+			<label index="tx_nccu3er_transitions.slicing">Drehrichtung der Scheibenschnitte</label>
+			<label index="tx_nccu3er_transitions.direction.I.0">links</label>
+			<label index="tx_nccu3er_transitions.direction.I.1">rechts</label>
+			<label index="tx_nccu3er_transitions.direction.I.2">oben</label>
+			<label index="tx_nccu3er_transitions.direction.I.3">unten</label>
+			<label index="tx_nccu3er_transitions.direction">Drehrichtung des Übergangs</label>
+			<label index="tx_nccu3er_transitions.duration">Dauer des Übergangs (in Sekunden)</label>
+			<label index="tx_nccu3er_transitions.delay">Verzögerung des Übergangs (in Sekunden)</label>
+			<label index="tx_nccu3er_transitions.shader.I.0">keine</label>
+			<label index="tx_nccu3er_transitions.shader.I.1">flach</label>
+			<label index="tx_nccu3er_transitions.shader.I.2">phong</label>
+			<label index="tx_nccu3er_transitions.shader">Abtönung der Scheiben</label>
+			<label index="tx_nccu3er_transitions.light_position">Lichtposition der Abtönung (x,y,z / nur wenn nicht &quot;keine&quot;)</label>
+			<label index="tx_nccu3er_transitions.cube_color">Farbe des Würfels</label>
+			<label index="tx_nccu3er_transitions.z_multiplier">Multiplikatior für Jojo-Effekt</label>
+			
+			<label index="tx_nccu3er_cubes">Würfel</label>
+			<label index="tx_nccu3er_cubes.user_interface">Anzeige-Einstellungen</label>
+			<label index="tx_nccu3er_cubes.name">Name des cu3ers</label>
+            <label index="tx_nccu3er_cubes.slides">Folien</label>
+            <label index="tx_nccu3er_cubes.transitions">Übergänge</label>
+            
+            <label index="tx_nccu3er_cubes.div_general">General</label>
+			<label index="tx_nccu3er_cubes.div_user_interface">Ansicht</label>
+			<label index="tx_nccu3er_cubes.div_slides">Präsentation (Folien und Übergänge)</label>
+			
+		</languageKey>
+	</data>
+</T3locallang>
