@@ -1,0 +1,2 @@
+# cat=basic; type=string; label=Speicherort für XML-Datei
+pathConfigFile = uploads/tx_nccu3er/ 

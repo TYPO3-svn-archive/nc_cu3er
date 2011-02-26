@@ -5,20 +5,13 @@ class tx_nccu3er_tcemainprocdm extends tslib_pibase {
     	require_once (PATH_t3lib.'class.t3lib_page.php');
 		require_once (PATH_t3lib.'class.t3lib_tstemplate.php');
 		require_once (PATH_t3lib.'class.t3lib_tsparser_ext.php'); 
-    
-		//get TS of nc_cu3er
-		list($page) = t3lib_BEfunc::getRecordsByField('pages','pid',0);
-		$pageUid = intval($page['uid']);
-		$sysPageObj = t3lib_div::makeInstance('t3lib_pageSelect');
-		$rootLine = $sysPageObj->getRootLine($pageUid);
-		$TSObj = t3lib_div::makeInstance('t3lib_tsparser_ext');
-		$TSObj->tt_track = 0;
-		$TSObj->init();
-		$TSObj->runThroughTemplates($rootLine);
-		$TSObj->generateConfig();
-		$conf = $TSObj->setup['plugin.']['tx_nccu3er_pi1.'];
+    	
+		// get folder from constants
+		$_extConfig = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['nc_cu3er']);
+		$folder = $_extConfig['pathConfigFile'];
 
-    	if ($status == 'update' && $table == 'tx_nccu3er_cubes') {
+		//if ($status == 'update' && $table == 'tx_nccu3er_cubes') {
+		if (($status == 'update' || $status == 'new') && $table == 'tx_nccu3er_cubes') {
     		$row = t3lib_BEfunc::getRecord($table, $id);
     		$flexFormArray = t3lib_div::xml2array($row['user_interface']);
     		$xmlEntries = $flexFormArray['data'];
@@ -70,8 +63,9 @@ class tx_nccu3er_tcemainprocdm extends tslib_pibase {
     		$xmlOutput.= '</cu3er>'.chr(10);
     		
     		//write file
-    		$filename = t3lib_div::getIndpEnv('TYPO3_DOCUMENT_ROOT')  . '/' . $conf['pathConfigFile'].'config_'.$id.'.xml';
-    		t3lib_div::debug($filename);
+    		//$filename = t3lib_div::getIndpEnv('TYPO3_DOCUMENT_ROOT')  . '/' . $conf['pathConfigFile'].'config_'.$id.'.xml';
+    		$filename = t3lib_div::getIndpEnv('TYPO3_DOCUMENT_ROOT')  . '/' . $folder.'config_'.$id.'.xml';
+    		//t3lib_div::debug($filename);
 			if (!$handle = fopen($filename, 'w')) {
 				exit;
 			}
