@@ -10,5 +10,11 @@ t3lib_extMgm::addUserTSConfig('
 	mod.web_list.hideTables = tx_nccu3er_slides
 ');
 
-$GLOBALS ['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'EXT:nc_cu3er/class.tx_nccu3er_tcemainprocdm.php:tx_nccu3er_tcemainprocdm';
+$TYPO3_CONF_VARS['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'EXT:nc_cu3er/class.tx_nccu3er_tcemainprocdm.php:tx_nccu3er_tcemainprocdm';
+$TYPO3_CONF_VARS['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processCmdmapClass'][] = 'EXT:nc_cu3er/class.tx_nccu3er_tcemainprocdm.php:tx_nccu3er_tcemainprocdm';
+
+/* available hooks
+4.4: processCmdmap_postProcess
+4.5: processCmdmap_deleteAction
+*/
 ?>

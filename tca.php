@@ -8,7 +8,7 @@ $TCA['tx_nccu3er_slides'] = array (
 	),
 	'feInterface' => $TCA['tx_nccu3er_slides']['feInterface'],
 	'columns' => array (
-		't3ver_label' => array (		
+		't3ver_label' => array (
 			'label'  => 'LLL:EXT:lang/locallang_general.xml:LGL.versionLabel',
 			'config' => array (
 				'type' => 'input',
@@ -16,7 +16,7 @@ $TCA['tx_nccu3er_slides'] = array (
 				'max'  => '30',
 			)
 		),
-		'sys_language_uid' => array (		
+		'sys_language_uid' => array (
 			'exclude' => 1,
 			'label'  => 'LLL:EXT:lang/locallang_general.xml:LGL.language',
 			'config' => array (
@@ -29,7 +29,7 @@ $TCA['tx_nccu3er_slides'] = array (
 				)
 			)
 		),
-		'l10n_parent' => array (		
+		'l10n_parent' => array (
 			'displayCond' => 'FIELD:sys_language_uid:>:0',
 			'exclude'     => 1,
 			'label'       => 'LLL:EXT:lang/locallang_general.xml:LGL.l18n_parent',
@@ -42,12 +42,12 @@ $TCA['tx_nccu3er_slides'] = array (
 				'foreign_table_where' => 'AND tx_nccu3er_slides.pid=###CURRENT_PID### AND tx_nccu3er_slides.sys_language_uid IN (-1,0)',
 			)
 		),
-		'l10n_diffsource' => array (		
+		'l10n_diffsource' => array (
 			'config' => array (
 				'type' => 'passthrough'
 			)
 		),
-		'hidden' => array (		
+		'hidden' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
@@ -55,7 +55,7 @@ $TCA['tx_nccu3er_slides'] = array (
 				'default' => '0'
 			)
 		),
-		'starttime' => array (		
+		'starttime' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.starttime',
 			'config'  => array (
@@ -67,7 +67,7 @@ $TCA['tx_nccu3er_slides'] = array (
 				'checkbox' => '0'
 			)
 		),
-		'endtime' => array (		
+		'endtime' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.endtime',
 			'config'  => array (
@@ -83,7 +83,7 @@ $TCA['tx_nccu3er_slides'] = array (
 				)
 			)
 		),
-		'fe_group' => array (		
+		'fe_group' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.fe_group',
 			'config'  => array (
@@ -97,33 +97,33 @@ $TCA['tx_nccu3er_slides'] = array (
 				'foreign_table' => 'fe_groups'
 			)
 		),
-		'name' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.name',		
+		'name' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.name',
 			'config' => array (
-				'type' => 'input',	
-				'size' => '30',	
+				'type' => 'input',
+				'size' => '30',
 				'eval' => 'required,trim',
 			)
 		),
-		'url' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.url',		
+		'url' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.url',
 			'config' => array (
 				'type' => 'group',
 				'internal_type' => 'file',
-				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],	
-				'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],	
+				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+				'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
 				'uploadfolder' => 'uploads/tx_nccu3er/',
-				'show_thumbs' => 1,	
-				'size' => 1,	
+				'show_thumbs' => 1,
+				'size' => 1,
 				'minitems' => 0,
 				'maxitems' => 1,
 			)
 		),
-		'link' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.link',		
+		'link' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.link',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '15',
@@ -142,9 +142,9 @@ $TCA['tx_nccu3er_slides'] = array (
 				)
 			)
 		),
-		'target' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.target',		
+		'target' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.target',
 			'config' => array (
 				'type' => 'select',
 				'items' => array (
@@ -153,32 +153,32 @@ $TCA['tx_nccu3er_slides'] = array (
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.target.I.2', '2'),
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.target.I.3', '3'),
 				),
-				'size' => 1,	
+				'size' => 1,
 				'maxitems' => 1,
 			)
 		),
-		'description_heading' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_heading',		
+		'description_heading' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_heading',
 			'config' => array (
-				'type' => 'input',	
-				'size' => '30',	
+				'type' => 'input',
+				'size' => '30',
 				'eval' => 'trim',
 			)
 		),
-		'description_paragraph' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_paragraph',		
+		'description_paragraph' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_paragraph',
 			'config' => array (
 				'type' => 'text',
 				'wrap' => 'OFF',
-				'cols' => '40',	
+				'cols' => '40',
 				'rows' => '10',
 			)
 		),
-		'description_link' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_link',		
+		'description_link' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_link',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '15',
@@ -197,9 +197,9 @@ $TCA['tx_nccu3er_slides'] = array (
 				)
 			)
 		),
-		'description_target' => array (		
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_target',		
+		'description_target' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_target',
 			'config' => array (
 				'type' => 'select',
 				'items' => array (
@@ -208,21 +208,21 @@ $TCA['tx_nccu3er_slides'] = array (
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_target.I.2', '2'),
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.description_target.I.3', '3'),
 				),
-				'size' => 1,	
+				'size' => 1,
 				'maxitems' => 1,
 			)
 		),
-		'transition_flag' => array (        
-            'exclude' => 0,        
-            'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.flag',        
-            'config' => array (
-                'type' => 'check',
-            )
-        ),
-		'transition_num' => array (		
+		'transition_flag' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.flag',
+			'config' => array (
+				'type' => 'check',
+			)
+		),
+		'transition_num' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.num',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.num',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '4',
@@ -236,25 +236,25 @@ $TCA['tx_nccu3er_slides'] = array (
 				'default' => 1
 			)
 		),
-		'transition_slicing' => array (		
+		'transition_slicing' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.slicing',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.slicing',
 			'config' => array (
 				'type' => 'select',
 				'items' => array (
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.slicing.I.0', '0'),
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.slicing.I.1', '1'),
 				),
-				'size' => 1,	
+				'size' => 1,
 				'maxitems' => 1,
 				'default' => 0
 			)
 		),
-		'transition_direction' => array (		
+		'transition_direction' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.direction',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.direction',
 			'config' => array (
 				'type' => 'select',
 				'items' => array (
@@ -263,15 +263,15 @@ $TCA['tx_nccu3er_slides'] = array (
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.direction.I.2', '2'),
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.direction.I.3', '3'),
 				),
-				'size' => 1,	
+				'size' => 1,
 				'maxitems' => 1,
 				'default' => 0
 			)
 		),
-		'transition_duration' => array (		
+		'transition_duration' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.duration',		
+			'exclude' => 0,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.duration',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '4',
@@ -285,10 +285,10 @@ $TCA['tx_nccu3er_slides'] = array (
 				'default' => 0.5
 			)
 		),
-		'transition_delay' => array (		
+		'transition_delay' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.delay',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.delay',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '4',
@@ -302,10 +302,10 @@ $TCA['tx_nccu3er_slides'] = array (
 				'default' => 0.1
 			)
 		),
-		'transition_shader' => array (		
+		'transition_shader' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.shader',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.shader',
 			'config' => array (
 				'type' => 'select',
 				'items' => array (
@@ -313,29 +313,29 @@ $TCA['tx_nccu3er_slides'] = array (
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.shader.I.1', '1'),
 					array('LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.shader.I.2', '2'),
 				),
-				'size' => 1,	
+				'size' => 1,
 				'maxitems' => 1,
 				'default' => 0
 			)
 		),
-		'transition_light_position' => array (		
+		'transition_light_position' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.light_position',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.light_position',
 			'config' => array (
-				'type' => 'input',	
-				'size' => '30',	
+				'type' => 'input',
+				'size' => '30',
 				'eval' => 'trim',
 				'default' => '0,0,-100'
 			)
 		),
-		'transition_cube_color' => array (		
+		'transition_cube_color' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.cube_color',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.cube_color',
 			'config' => array (
-				'type' => 'input',	
-				'size' => '30',	
+				'type' => 'input',
+				'size' => '30',
 				'wizards' => array(
 					'_PADDING' => 2,
 					'color' => array(
@@ -349,10 +349,10 @@ $TCA['tx_nccu3er_slides'] = array (
 				),
 			)
 		),
-		'transition_z_multiplier' => array (		
+		'transition_z_multiplier' => array (
 			'displayCond' => 'FIELD:transition_flag:>:0',
-			'exclude' => 1,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.z_multiplier',		
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_transitions.z_multiplier',
 			'config' => array (
 				'type'     => 'input',
 				'size'     => '4',
@@ -368,9 +368,9 @@ $TCA['tx_nccu3er_slides'] = array (
 		),
 	),
 	'types' => array (
-		'0' => array('showitem' => '--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_general,name,sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, 
-									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_image,url, 
-									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_link,link, target, 
+		'0' => array('showitem' => '--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_general,name,sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1,
+									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_image,url,
+									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_link,link, target,
 									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_description,description_heading, description_paragraph, description_link, description_target,
 									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides.div_transition,transition_flag,transition_num,transition_slicing,transition_direction,transition_duration,transition_delay,transition_shader,transition_light_position,transition_cube_color,transition_z_multiplier')
 	),
@@ -389,7 +389,7 @@ $TCA['tx_nccu3er_cubes'] = array (
 	),
 	'feInterface' => $TCA['tx_nccu3er_cubes']['feInterface'],
 	'columns' => array (
-		't3ver_label' => array (		
+		't3ver_label' => array (
 			'label'  => 'LLL:EXT:lang/locallang_general.xml:LGL.versionLabel',
 			'config' => array (
 				'type' => 'input',
@@ -397,7 +397,7 @@ $TCA['tx_nccu3er_cubes'] = array (
 				'max'  => '30',
 			)
 		),
-		'hidden' => array (		
+		'hidden' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
@@ -405,7 +405,7 @@ $TCA['tx_nccu3er_cubes'] = array (
 				'default' => '0'
 			)
 		),
-		'starttime' => array (		
+		'starttime' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.starttime',
 			'config'  => array (
@@ -417,7 +417,7 @@ $TCA['tx_nccu3er_cubes'] = array (
 				'checkbox' => '0'
 			)
 		),
-		'endtime' => array (		
+		'endtime' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.endtime',
 			'config'  => array (
@@ -433,7 +433,7 @@ $TCA['tx_nccu3er_cubes'] = array (
 				)
 			)
 		),
-		'fe_group' => array (		
+		'fe_group' => array (
 			'exclude' => 1,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.fe_group',
 			'config'  => array (
@@ -447,17 +447,17 @@ $TCA['tx_nccu3er_cubes'] = array (
 				'foreign_table' => 'fe_groups'
 			)
 		),
-		'name' => array (        
-            'exclude' => 1,        
-            'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.name',        
-            'config' => array (
-                'type' => 'input',    
-                'size' => '30',
-            )
-        ),
-		'user_interface' => array (		
-			'exclude' => 0,		
-			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.user_interface',		
+		'name' => array (
+			'exclude' => 1,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.name',
+			'config' => array (
+				'type' => 'input',
+				'size' => '30',
+			)
+		),
+		'user_interface' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.user_interface',
 			'config' => array (
 				'type' => 'flex',
 				'ds' => array (
@@ -465,9 +465,9 @@ $TCA['tx_nccu3er_cubes'] = array (
 				),
 			)
 		),
-        'slides' => array (        
-            'exclude' => 0,        
-            'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.slides',        
+		'slides' => array (
+			'exclude' => 0,
+			'label' => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.slides',
 			'config' => array (
 				'type' => 'inline',
 				'foreign_table' => 'tx_nccu3er_slides',
@@ -483,11 +483,11 @@ $TCA['tx_nccu3er_cubes'] = array (
 					'showSynchronizationLink' => 1,
 				),
 			),
-        ),
+		),
 	),
 	'types' => array (
-		'0' => array('showitem' => '--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.div_general,name,hidden;;1;;1-1-1, 
-									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.div_user_interface,user_interface, 
+		'0' => array('showitem' => '--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.div_general,name,hidden;;1;;1-1-1,
+									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.div_user_interface,user_interface,
 									--div--;LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes.div_slides,slides')
 	),
 	'palettes' => array (

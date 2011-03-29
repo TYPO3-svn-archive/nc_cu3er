@@ -1,139 +1,138 @@
 <T3DataStructure>
-  <meta>
-    <langDisable>1</langDisable>
-   
-  </meta>
-  <sheets>
-    <sCONF>
-      <ROOT>
-        <TCEforms>
-          <sheetTitle>cu3er Konfiguration (XML)</sheetTitle>
-        </TCEforms>
-        <type>array</type>
-        <el>
-			<use_static_config>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sCONF>
+			<ROOT>
 				<TCEforms>
-				    <exclude>1</exclude>
-				    <label>Use static config file</label>
-				    <onChange>reload</onChange>
-				    <config>
-				      <type>check</type>
-				    </config>
+					<sheetTitle>cu3er Konfiguration (XML)</sheetTitle>
 				</TCEforms>
-			</use_static_config>
-		  	<static_config>
+				<type>array</type>
+				<el>
+					<use_static_config>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>Use static config file</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</use_static_config>
+					<static_config>
+						<TCEforms>
+							<label>Static config file</label>
+							<displayCond><![CDATA[FIELD:use_static_config:>:0]]></displayCond>
+							<config>
+								<type>input</type>
+								<size>40</size>
+								<wizards type="array">
+									<_PADDING type="integer">2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard</script>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</static_config>
+					<cu3er>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>cu3er</label>
+							<displayCond><![CDATA[FIELD:use_static_config:<=:0]]></displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tx_nccu3er_cubes</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+							</config>
+						</TCEforms>
+					</cu3er>
+				</el>
+			</ROOT>
+		</sCONF>
+		<sOPT>
+			<ROOT>
 				<TCEforms>
-					<label>Static config file</label>
-					<displayCond><![CDATA[FIELD:use_static_config:>:0]]></displayCond>
-					<config>
-						<type>input</type>
-						<size>40</size>
-						<wizards type="array">
-							<_PADDING type="integer">2</_PADDING>
-							<link type="array">
-								<type>popup</type>
-								<title>Link</title>
-								<icon>link_popup.gif</icon>
-								<script>browse_links.php?mode=wizard</script>
-								<JSopenParams>height=300,width=500,status=0,menuba r=0,scrollbars=1</JSopenParams>
-							</link>
-						</wizards>
-					</config>
+					<sheetTitle>Anzeige-Einstellungen</sheetTitle>
 				</TCEforms>
-			</static_config>
-			<cu3er>
+				<type>array</type>
+				<el>
+					<width>
+						<TCEforms>
+							<label>width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+							</config>
+						</TCEforms>
+					</width>
+					<height>
+						<TCEforms>
+							<label>height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<size>10</size>
+							</config>
+						</TCEforms>
+					</height>
+					<wmode>
+						<TCEforms>
+							<label>wmode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">transparent</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">opaque</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">window</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<default>0</default>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</wmode>
+				</el>
+			</ROOT>
+		</sOPT>
+		<sALT>
+			<ROOT>
 				<TCEforms>
-				    <exclude>1</exclude>
-				    <label>cu3er</label>
-				    <displayCond><![CDATA[FIELD:use_static_config:<=:0]]></displayCond>
-				    <config>
-				      <type>group</type>
-				      <internal_type>db</internal_type>
-				      <allowed>tx_nccu3er_cubes</allowed>
-				      <size>1</size>
-				      <maxitems>1</maxitems>
-				      <minitems>0</minitems>
-				    </config>
+					<sheetTitle>Alternativer Inhalt</sheetTitle>
 				</TCEforms>
-			</cu3er>
-        </el>
-      </ROOT>
-    </sCONF>
-    <sOPT>
-      <ROOT>
-        <TCEforms>
-          <sheetTitle>Anzeige-Einstellungen</sheetTitle>
-        </TCEforms>
-        <type>array</type>
-        <el>
-			<height>
-				<TCEforms>
-					<label>height</label>
-					<config>
-						<type>input</type>
-						<eval>num</eval>
-						<size>10</size>
-					</config>
-				</TCEforms>
-			</height>
-			<width>
-				<TCEforms>
-					<label>width</label>
-					<config>
-						<type>input</type>
-						<eval>num</eval>
-						<size>10</size>
-					</config>
-				</TCEforms>
-			</width>
-			<wmode>
-				<TCEforms>
-					<label>wmode</label>
-					<config>
-						<type>select</type>
-						<items type="array">
-							<numIndex index="0" type="array">
-								<numIndex index="0">transparent</numIndex>
-							</numIndex>
-							<numIndex index="1" type="array">
-								<numIndex index="0">opaque</numIndex>
-							</numIndex>
-							<numIndex index="2" type="array">
-								<numIndex index="0">window</numIndex>
-							</numIndex>
-						</items>
-						<maxitems>1</maxitems>
-						<default>0</default>
-						<size>1</size>
-					</config>
-				</TCEforms>
-			</wmode>
-        </el>
-      </ROOT>
-    </sOPT>
-    <sALT>
-      <ROOT>
-        <TCEforms>
-          <sheetTitle>Alternativer Inhalt</sheetTitle>
-        </TCEforms>
-        <type>array</type>
-        <el>
-			<alternative_content>
-				<TCEforms>
-				    <exclude>1</exclude>
-				    <label>alternative_content</label>
-				    <config>
-				      <type>group</type>
-				      <internal_type>db</internal_type>
-				      <allowed>tt_content</allowed>
-				      <size>3</size>
-				      <maxitems>10</maxitems>
-				      <minitems>0</minitems>
-				    </config>
-				</TCEforms>
-			</alternative_content>
-        </el>
-      </ROOT>
-    </sALT>
-  </sheets>
+				<type>array</type>
+				<el>
+					<alternative_content>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>alternative_content</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tt_content</allowed>
+								<size>3</size>
+								<maxitems>10</maxitems>
+								<minitems>0</minitems>
+							</config>
+						</TCEforms>
+					</alternative_content>
+				</el>
+			</ROOT>
+		</sALT>
+	</sheets>
 </T3DataStructure>

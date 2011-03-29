@@ -22,23 +22,23 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'static/cu3er_default_settings/', 'cu3er de
 
 $TCA['tx_nccu3er_slides'] = array (
 	'ctrl' => array (
-		'title'     => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides',	
-		'requestUpdate' => 'transition_flag',	
-		'label'     => 'name',	
+		'title'     => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_slides',
+		'requestUpdate' => 'transition_flag',
+		'label'     => 'name',
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
 		'cruser_id' => 'cruser_id',
-		'versioningWS' => TRUE, 
+		'versioningWS' => TRUE,
 		'origUid' => 't3_origuid',
-		'languageField'            => 'sys_language_uid',	
-		'transOrigPointerField'    => 'l10n_parent',	
-		'transOrigDiffSourceField' => 'l10n_diffsource',	
-		'sortby' => 'sorting',	
-		'delete' => 'deleted',	
-		'enablecolumns' => array (		
-			'disabled' => 'hidden',	
-			'starttime' => 'starttime',	
-			'endtime' => 'endtime',	
+		'languageField'            => 'sys_language_uid',
+		'transOrigPointerField'    => 'l10n_parent',
+		'transOrigDiffSourceField' => 'l10n_diffsource',
+		'sortby' => 'sorting',
+		'delete' => 'deleted',
+		'enablecolumns' => array (
+			'disabled' => 'hidden',
+			'starttime' => 'starttime',
+			'endtime' => 'endtime',
 			'fe_group' => 'fe_group',
 		),
 		'dividers2tabs' => 1,
@@ -49,19 +49,19 @@ $TCA['tx_nccu3er_slides'] = array (
 
 $TCA['tx_nccu3er_cubes'] = array (
 	'ctrl' => array (
-		'title'     => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes',		
-		'label'     => 'name',	
+		'title'     => 'LLL:EXT:nc_cu3er/locallang_db.xml:tx_nccu3er_cubes',
+		'label'     => 'name',
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
 		'cruser_id' => 'cruser_id',
-		'versioningWS' => TRUE, 
+		'versioningWS' => TRUE,
 		'origUid' => 't3_origuid',
-		'sortby' => 'sorting',	
-		'delete' => 'deleted',	
-		'enablecolumns' => array (		
-			'disabled' => 'hidden',	
-			'starttime' => 'starttime',	
-			'endtime' => 'endtime',	
+		'sortby' => 'sorting',
+		'delete' => 'deleted',
+		'enablecolumns' => array (
+			'disabled' => 'hidden',
+			'starttime' => 'starttime',
+			'endtime' => 'endtime',
 			'fe_group' => 'fe_group',
 		),
 		'dividers2tabs' => 1,
@@ -78,7 +78,7 @@ t3lib_extMgm::addPiFlexFormValue($_EXTKEY.'_pi1', 'FILE:EXT:'.$_EXTKEY.'/flexfor
 /*
 if (TYPO3_MODE == 'BE') {
 	t3lib_extMgm::addModulePath('web_txnccu3erM1', t3lib_extMgm::extPath($_EXTKEY) . 'mod1/');
-		
+
 	t3lib_extMgm::addModule('web', 'txnccu3erM1', '', t3lib_extMgm::extPath($_EXTKEY) . 'mod1/');
 }
 */

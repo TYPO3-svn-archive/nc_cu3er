@@ -39,40 +39,39 @@
  */
 class tx_nccu3er_pi1_wizicon {
 
-					/**
-					 * Processing the wizard items array
-					 *
-					 * @param	array		$wizardItems: The wizard items
-					 * @return	Modified array with wizard items
-					 */
-					function proc($wizardItems)	{
-						global $LANG;
+	/**
+	 * Processing the wizard items array
+	 *
+	 * @param	array		$wizardItems: The wizard items
+	 * @return	Modified array with wizard items
+	 */
+	function proc($wizardItems)	{
+		global $LANG;
 
-						$LL = $this->includeLocalLang();
+		$LL = $this->includeLocalLang();
 
-						$wizardItems['plugins_tx_nccu3er_pi1'] = array(
-							'icon'=>t3lib_extMgm::extRelPath('nc_cu3er').'pi1/ce_wiz.gif',
-							'title'=>$LANG->getLLL('pi1_title',$LL),
-							'description'=>$LANG->getLLL('pi1_plus_wiz_description',$LL),
-							'params'=>'&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=nc_cu3er_pi1'
-						);
+		$wizardItems['plugins_tx_nccu3er_pi1'] = array(
+			'icon'=>t3lib_extMgm::extRelPath('nc_cu3er').'pi1/ce_wiz.gif',
+			'title'=>$LANG->getLLL('pi1_title',$LL),
+			'description'=>$LANG->getLLL('pi1_plus_wiz_description',$LL),
+			'params'=>'&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=nc_cu3er_pi1'
+		);
 
-						return $wizardItems;
-					}
+		return $wizardItems;
+	}
 
-					/**
-					 * Reads the [extDir]/locallang.xml and returns the $LOCAL_LANG array found in that file.
-					 *
-					 * @return	The array with language labels
-					 */
-					function includeLocalLang()	{
-						$llFile = t3lib_extMgm::extPath('nc_cu3er').'locallang.xml';
-						$LOCAL_LANG = t3lib_div::readLLXMLfile($llFile, $GLOBALS['LANG']->lang);
+	/**
+	 * Reads the [extDir]/locallang.xml and returns the $LOCAL_LANG array found in that file.
+	 *
+	 * @return	The array with language labels
+	 */
+	function includeLocalLang()	{
+		$llFile = t3lib_extMgm::extPath('nc_cu3er').'locallang.xml';
+		$LOCAL_LANG = t3lib_div::readLLXMLfile($llFile, $GLOBALS['LANG']->lang);
 
-						return $LOCAL_LANG;
-					}
-				}
-
+		return $LOCAL_LANG;
+	}
+}
 
 
 if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/nc_cu3er/pi1/class.tx_nccu3er_pi1_wizicon.php'])	{

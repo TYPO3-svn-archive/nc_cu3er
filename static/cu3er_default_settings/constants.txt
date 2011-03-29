@@ -2,15 +2,16 @@ plugin.tx_nccu3er_pi1 {
 	pathSwfObject 		= typo3conf/ext/nc_cu3er/res/swfobject.js
 	pathExpressInstall	= typo3conf/ext/nc_cu3er/res/expressInstall.swf
 	pathFlashFile 		= typo3conf/ext/nc_cu3er/res/cu3er.swf
+	pathConfigFile 		= uploads/tx_nccu3er/
 	staticConfigFile	= uploads/tx_nccu3er/config.xml
 	useStaticConfig		= 0
 	pathFlashFont 		= typo3conf/ext/nc_cu3er/res/font.swf
 	typeNumFlashFile 	= 
 	idSwfObject 		= cu3er-container
 	idFlashObject 		= slider
-	height 			= 360
-	width 			= 960
-	wmode 			= transparent
-	id 			= slider
+	height 				= 360
+	width 				= 960
+	wmode 				= transparent
+	id 					= slider
 	flashVersion		= 9
 }

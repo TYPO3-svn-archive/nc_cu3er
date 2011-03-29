@@ -2,6 +2,7 @@ plugin.tx_nccu3er_pi1 {
 	pathSwfObject 		= {$plugin.tx_nccu3er_pi1.pathSwfObject}
 	pathExpressInstall	= {$plugin.tx_nccu3er_pi1.pathExpressInstall}
 	pathFlashFile 		= {$plugin.tx_nccu3er_pi1.pathFlashFile}
+	pathConfigFile 		= {$plugin.tx_nccu3er_pi1.pathConfigFile}
 	useStaticConfig		= {$plugin.tx_nccu3er_pi1.useStaticConfig}
 	staticConfigFile	= {$plugin.tx_nccu3er_pi1.staticConfigFile}
 	pathFlashFont 		= {$plugin.tx_nccu3er_pi1.pathFlashFont}

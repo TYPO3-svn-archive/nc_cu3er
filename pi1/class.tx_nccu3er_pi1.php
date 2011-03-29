@@ -41,7 +41,7 @@ class tx_nccu3er_pi1 extends tslib_pibase {
 	var $prefixId      = 'tx_nccu3er_pi1';		// Same as class name
 	var $scriptRelPath = 'pi1/class.tx_nccu3er_pi1.php';	// Path to this script relative to the extension dir.
 	var $extKey        = 'nc_cu3er';	// The extension key.
-	
+
 	/**
 	 * The main method of the PlugIn
 	 *
@@ -56,46 +56,48 @@ class tx_nccu3er_pi1 extends tslib_pibase {
 		$this->pi_USER_INT_obj = 1;
 		$this->pi_initPIflexform();
 		$this->piFlexForm = $this->cObj->data['pi_flexform'];
-		
+
 		$this->useStatic = $this->conf['useStaticConfig'];
 		$this->useStatic = $this->pi_getFFvalue($this->piFlexForm, 'use_static_config', 'sCONF');
-		
+
 		if ($this->useStatic > 0) {
-			
 			$this->staticConfigurationFile = $this->pi_getFFvalue($this->piFlexForm, 'static_config', 'sCONF');
-			if ($this->staticConfigurationFile == '')
+			if ($this->staticConfigurationFile == '') {
 				$this->staticConfigurationFile = $this->conf['staticConfigFile'];
-		}else{
+			}
+		} else{
 			$this->dynConfigPath = $GLOBALS['TSFE']->tmpl->setup['config.']['baseURL'].$this->conf['pathConfigFile'];
 		}
-		
+
 		$this->cu3er = $this->pi_getFFvalue($this->piFlexForm, 'cu3er', 'sCONF');
-		
-		$this->height = $this->pi_getFFvalue($this->piFlexForm, 'height', 'sOPT');
-		if ($this->height == '')
-			$this->height = $this->conf['height'];
-		
+
 		$this->width = $this->pi_getFFvalue($this->piFlexForm, 'width', 'sOPT');
-		if ($this->width == '')
+		if ($this->width == '') {
 			$this->width = $this->conf['width'];
-		
+		}
+
+		$this->height = $this->pi_getFFvalue($this->piFlexForm, 'height', 'sOPT');
+		if ($this->height == '') {
+			$this->height = $this->conf['height'];
+		}
+
 		$this->wmode = $this->pi_getFFvalue($this->piFlexForm, 'wmode', 'sOPT');
 		if ($this->wmode == '')
 			$this->wmode = $this->conf['wmode'];
-		
+
 		$this->alternativeContent = $this->pi_getFFvalue($this->piFlexForm, 'alternative_content', 'sALT');
-		
+
 		if ($this->alternativeContent == '') {
 			$this->alternativeContentOutput = '
 				<a href="http://www.adobe.com/go/getflashplayer">
-			        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-			    </a>
+					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+				</a>
 			';
-		}else{
-			$tt_content_conf = array('tables' => 'tt_content','source' => $this->alternativeContent,'dontCheckPid' => 1);
+		} else {
+			$tt_content_conf = array('tables' => 'tt_content', 'source' => $this->alternativeContent, 'dontCheckPid' => 1);
 			$this->alternativeContentOutput = $this->cObj->RECORDS($tt_content_conf);
-		}  
-		
+		}
+
 		//include swfObject and JS-Code
 		$GLOBALS['TSFE']->additionalHeaderData[$this->prefixId] .= '
 			<script type="text/javascript" src="'.$this->conf['pathSwfObject'].'"></script>
@@ -109,7 +111,7 @@ class tx_nccu3er_pi1 extends tslib_pibase {
 				swfobject.embedSWF("'.$this->conf['pathFlashFile'].'", "'.$this->conf['idSwfObject'].'_'.$this->cu3er.'", "'.$this->width.'", "'.$this->height.'", "'.$this->conf['flashVersion'].'", "'.$this->conf['pathExpressInstall'].'", flashvars, attributes);
 			</script>
 		';
-		
+
 		$content='
 			<div id="'.$this->conf['idSwfObject'].'_'.$this->cu3er.'">
 				'.$this->alternativeContentOutput.'
@@ -117,10 +119,11 @@ class tx_nccu3er_pi1 extends tslib_pibase {
 		';
 		return $this->pi_wrapInBaseClass($content);
 	}
-	
+
 	function getXML() {
-		if ($this->useStatic > 0) 
+		if ($this->useStatic > 0) {
 			return $this->staticConfigurationFile;
+		}
 		return $this->dynConfigPath . 'config_' . $this->cu3er .'.xml';
 	}
 }

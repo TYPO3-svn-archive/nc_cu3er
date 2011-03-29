@@ -56,10 +56,10 @@
 			<label index="tx_nccu3er_cubes">Cube</label>
 			<label index="tx_nccu3er_cubes.user_interface">Interface settings</label>
 			<label index="tx_nccu3er_cubes.name">Name of cu3er</label>
-            <label index="tx_nccu3er_cubes.slides">Slides</label>
-            <label index="tx_nccu3er_cubes.transitions">Transitions</label>
-            
-            <label index="tx_nccu3er_cubes.div_general">General</label>
+			<label index="tx_nccu3er_cubes.slides">Slides</label>
+			<label index="tx_nccu3er_cubes.transitions">Transitions</label>
+			
+			<label index="tx_nccu3er_cubes.div_general">General</label>
 			<label index="tx_nccu3er_cubes.div_user_interface">Interface</label>
 			<label index="tx_nccu3er_cubes.div_slides">Presentation (slides and transition)</label>
 		</languageKey>
@@ -112,10 +112,10 @@
 			<label index="tx_nccu3er_cubes">Würfel</label>
 			<label index="tx_nccu3er_cubes.user_interface">Anzeige-Einstellungen</label>
 			<label index="tx_nccu3er_cubes.name">Name des cu3ers</label>
-            <label index="tx_nccu3er_cubes.slides">Folien</label>
-            <label index="tx_nccu3er_cubes.transitions">Übergänge</label>
-            
-            <label index="tx_nccu3er_cubes.div_general">General</label>
+			<label index="tx_nccu3er_cubes.slides">Folien</label>
+			<label index="tx_nccu3er_cubes.transitions">Übergänge</label>
+			
+			<label index="tx_nccu3er_cubes.div_general">General</label>
 			<label index="tx_nccu3er_cubes.div_user_interface">Ansicht</label>
 			<label index="tx_nccu3er_cubes.div_slides">Präsentation (Folien und Übergänge)</label>
 			
